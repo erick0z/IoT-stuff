@@ -20,10 +20,10 @@ function calculate_experience(h) {
 Cylon.robot({
   connections: {
     edison: { adaptor: 'intel-iot' },
-    m2x: { adaptor: 'm2x', masterKey: '9b18886da32ba5524bb557376d996b91'}
+    m2x: { adaptor: 'm2x', masterKey: '<Your AT&T M2X Master Key>'}
   },
   devices: {
-    m2x: { driver: 'm2x', id: '45f7fa6a0529249a6874f0025e2755ef', connection: 'm2x'},
+    m2x: { driver: 'm2x', id: 'at&t m2x app id', connection: 'm2x'},
     temp_sensor: { driver: 'analog-sensor', pin: 0, lowerLimit: -100, upperLimit: 900, connection: 'edison'},
     light_sensor: { driver: 'analog-sensor', pin: 1, lowerLimit: 0, upperLimit: 999, connection: 'edison'},
     humidity_sensor: { driver: 'analog-sensor', pin: 2, lowerLimit: -50, upperLimit: 1024, connection: 'edison'},
